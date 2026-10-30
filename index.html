@@ -1,15 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet", href="styles/style.css" />
-    <title>Moneymaker Site</title>
+    <meta name="description" content="Moneymaker — мастер-классы по дизайну монет и купюр. 30–31 октября.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Moneymaker</title>
 </head>
 <body>
-    <main>
-        <h1>Проверка</h1>
-        <p>Russo One</p>
-    </main>
+<svg class="sprite" width="0" height="0" aria-hidden="true">
+  <defs>
+    <symbol id="star" viewBox="0 0 100 100"><polygon points="50,0 53.06,42.61 85.36,14.64 57.39,46.94 100,50 57.39,53.06 85.36,85.36 53.06,57.39 50,100 46.94,57.39 14.64,85.36 42.61,53.06 0,50 42.61,46.94 14.64,14.64 46.94,42.61"/></symbol>
+    <filter id="grain-light" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="3" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 .55  0 0 0 0 .45  0 0 0 0 .4  0 0 0 .18 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="grain-red" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".95" numOctaves="2" seed="5" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 .3  0 0 0 0 0  0 0 0 0 0  0 0 0 .35 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+</svg>
+<div class="page" id="page">
+  <header class="sec header">
+    <div class="box header-divider-left"></div>
+    <img class="box header-logo" src="assets/logo-header.png" alt="Moneymaker">
+    <div class="box header-divider-right"></div>
+    <a class="box btn header-button" href="#schedule"><span class="tx text-button header-button-text">GET A TICKET</span></a>
+    <nav aria-label="Разделы"><p class="tx text-brand header-title">MONEYMAKER</p><a class="tx text-nav nav-program" href="#program">ПРОГРАММА</a><a class="tx text-nav nav-about" href="#about">О НАС</a><a class="tx text-nav nav-schedule" href="#schedule">РАСПИСАНИЕ</a><a class="tx text-nav nav-contacts" href="#contacts">КОНТАКТЫ</a></nav>
+  </header>
+  <section class="sec hero" id="top" aria-label="Первый экран">
+    <div class="box sticker hero-sticker"><div class="sticker-frame"></div></div>
+    <img class="box hero-euro" src="assets/hero-euro.png" alt="">
+    <img class="box hero-kzt" src="assets/hero-kzt.png" alt="">
+    <img class="box hero-yen" src="assets/hero-yen.png" alt="">
+    <p class="tx text-maker hero-maker">MAKER</p>
+    <p class="tx text-money hero-money">money</p>
+    <h1 class="tx text-subtitle hero-subtitle">мастер-классы по дизайну монет и купюр</h1>
+    <p class="tx text-sticker hero-sticker-text">30 - 31 ОКТЯБРЯ</p>
+  </section>
+  <section class="sec program" id="program" aria-label="Программа">
+    <img class="box program-photo" src="assets/photo-program.jpg" alt="">
+    <div class="box program-shade"></div>
+    <div class="box ribbon ribbon-1"></div>
+    <div class="box ribbon ribbon-2"></div>
+    <div class="box ribbon ribbon-3"></div>
+    <div class="box ribbon ribbon-4"></div>
+    <p class="tx text-step-number step-1-number">1</p>
+    <h3 class="tx text-step-title step-1-title">КОНЦЕПЦИЯ</h3>
+    <p class="tx text-step-text step-1-text">придумываем тему и идею, которую должен нести денежный знак</p>
+    <p class="tx text-step-number step-2-number">2</p>
+    <h3 class="tx text-step-title step-2-title">СИМВОЛЫ</h3>
+    <p class="tx text-step-text step-2-text">подбираем образы и знаки, которые передают ценность и доверие</p>
+    <p class="tx text-step-number step-3-number">3</p>
+    <h3 class="tx text-step-title step-3-title">КОМПОЗИЦИЯ</h3>
+    <p class="tx text-step-text step-3-text">строим изображение в прямоугольнике купюры и в круге монеты</p>
+    <p class="tx text-step-number step-4-number">4</p>
+    <h3 class="tx text-step-title step-4-title">ЗАЩИТА</h3>
+    <p class="tx text-step-text step-4-text">гильош, водяные знаки, микротекст и защитные нити</p>
+  </section>
+  <section class="sec about" id="about" aria-label="О нас">
+    <img class="box about-photo" src="assets/photo-about.jpg" alt="">
+    <div class="box about-frame"></div>
+    <p class="tx text-about about-text"><span class="text-about">
+
+</span><span class="text-about-accent">MoneyMaker</span><span class="text-about"> - это объединение опытных дизайнеров, успешно передающих свой опыт на протяжении последних пяти лет. Мы считаем, что создание образа денежной купюры - процесс очень требовательный и тонкий. Хорошая купюра или монета не только узнаваема, но красива и защищена одновременно, 
+
+Последние пять лет мы успешно обучаем своим наработкам на мастер-классах, которые уже прошли в Греции, Италии, Монголии, а теперь проводятся и по всей России. Мы учим не только символике и композиции, но и способу мышления с позиции автора денежного знака: в работать с цветами и рельефом так, чтобы закладывать защиту от подделки на уровне самого замысла. Участники уходят с практическими навыками и готовой концепцией, которую можно показать в портфолио.
+</span></p>
+  </section>
+  <section class="sec schedule" id="schedule" aria-label="Расписание">
+    <img class="box schedule-photo" src="assets/photo-schedule.jpg" alt="">
+    <div class="box card card-bills"><div class="chip card-bills-chip"><svg class="star card-bills-star" aria-hidden="true"><use href="#star"/></svg></div><div class="illus card-bills-illus"></div><img class="box card-bills-art" src="assets/art-bill.png" alt="Эскиз банкноты с пирамидой и всевидящим оком"></div>
+    <div class="box card card-coins"><div class="chip card-coins-chip"><svg class="star card-coins-star" aria-hidden="true"><use href="#star"/></svg></div><div class="illus card-coins-illus"></div><img class="box card-coins-art" src="assets/art-coins.svg" alt="Стопка монет с гравировкой пирамиды"></div>
+    <div class="box ticket-bills"><svg viewBox="0 0 519.8 181.2" width="519.8" height="181.2" aria-hidden="true"><path d="M6,0 H381.5 A8.5,8.5 0 0 0 398.5,0 H513.8 A6,6 0 0 0 519.8,6 V175.2 A6,6 0 0 0 513.8,181.2 H398.5 A8.5,8.5 0 0 0 381.5,181.2 H6 A6,6 0 0 0 0,175.2 V6 A6,6 0 0 0 6,0 Z" fill="#faebdb" stroke="#c47d77" stroke-width="1"/><path d="M6,0 H381.5 A8.5,8.5 0 0 0 398.5,0 H513.8 A6,6 0 0 0 519.8,6 V175.2 A6,6 0 0 0 513.8,181.2 H398.5 A8.5,8.5 0 0 0 381.5,181.2 H6 A6,6 0 0 0 0,175.2 V6 A6,6 0 0 0 6,0 Z" fill="#faebdb" filter="url(#grain-light)" opacity=".55"/><line x1="390" y1="12.5" x2="390" y2="168.7" stroke="#d7a59d" stroke-width="1" stroke-dasharray="5 3.5"/><g fill="#232323"><rect x="452" y="18.0" width="35" height="1.7"/><rect x="452" y="22.2" width="35" height="3.4"/><rect x="452" y="27.3" width="35" height="3.4"/><rect x="452" y="33.2" width="35" height="3.4"/><rect x="452" y="39.1" width="35" height="1.7"/><rect x="452" y="42.1" width="35" height="1.3"/><rect x="452" y="44.7" width="35" height="3.4"/><rect x="452" y="52.1" width="35" height="1.7"/><rect x="452" y="55.5" width="35" height="2.5"/><rect x="452" y="62.0" width="35" height="1"/><rect x="452" y="70.5" width="35" height="1.7"/><rect x="452" y="78.1" width="35" height="1"/><rect x="452" y="80.4" width="35" height="3.4"/><rect x="452" y="85.5" width="35" height="1.7"/><rect x="452" y="88.5" width="35" height="2.5"/><rect x="452" y="92.7" width="35" height="2.5"/><rect x="452" y="96.1" width="35" height="1.3"/><rect x="452" y="99.1" width="35" height="3.4"/><rect x="452" y="103.4" width="35" height="1.3"/><rect x="452" y="106.0" width="35" height="1"/><rect x="452" y="107.9" width="35" height="1"/><rect x="452" y="110.6" width="35" height="1.3"/><rect x="452" y="113.6" width="35" height="1"/><rect x="452" y="123.6" width="35" height="1"/><rect x="452" y="125.5" width="35" height="2.5"/><rect x="452" y="129.7" width="35" height="1.7"/><rect x="452" y="135.4" width="35" height="2.5"/><rect x="452" y="139.6" width="35" height="1.3"/><rect x="452" y="147.6" width="35" height="1.7"/><rect x="452" y="150.2" width="35" height="2.5"/><rect x="452" y="158.6" width="35" height="1.7"/></g></svg></div>
+    <div class="box ticket-coins"><svg viewBox="0 0 519.8 181.2" width="519.8" height="181.2" aria-hidden="true"><path d="M6,0 H382.5 A8.5,8.5 0 0 0 399.5,0 H513.8 A6,6 0 0 0 519.8,6 V175.2 A6,6 0 0 0 513.8,181.2 H399.5 A8.5,8.5 0 0 0 382.5,181.2 H6 A6,6 0 0 0 0,175.2 V6 A6,6 0 0 0 6,0 Z" fill="#a50e0d"/><path d="M6,0 H382.5 A8.5,8.5 0 0 0 399.5,0 H513.8 A6,6 0 0 0 519.8,6 V175.2 A6,6 0 0 0 513.8,181.2 H399.5 A8.5,8.5 0 0 0 382.5,181.2 H6 A6,6 0 0 0 0,175.2 V6 A6,6 0 0 0 6,0 Z" fill="#a50e0d" filter="url(#grain-red)" opacity=".55"/><line x1="391" y1="12.5" x2="391" y2="168.7" stroke="#d4766d" stroke-width="1" stroke-dasharray="5 3.5"/><g fill="#2a2020"><rect x="453" y="18.0" width="34" height="1.7"/><rect x="453" y="21.0" width="34" height="1"/><rect x="453" y="26.0" width="34" height="1.7"/><rect x="453" y="31.7" width="34" height="1.7"/><rect x="453" y="35.1" width="34" height="1"/><rect x="453" y="37.8" width="34" height="3.4"/><rect x="453" y="43.7" width="34" height="1"/><rect x="453" y="46.0" width="34" height="3.4"/><rect x="453" y="51.9" width="34" height="1"/><rect x="453" y="53.8" width="34" height="1"/><rect x="453" y="56.5" width="34" height="3.4"/><rect x="453" y="62.4" width="34" height="1.3"/><rect x="453" y="65.4" width="34" height="1"/><rect x="453" y="67.7" width="34" height="1"/><rect x="453" y="69.6" width="34" height="1.3"/><rect x="453" y="73.4" width="34" height="1.7"/><rect x="453" y="76.8" width="34" height="1"/><rect x="453" y="79.5" width="34" height="1"/><rect x="453" y="82.2" width="34" height="3.4"/><rect x="453" y="88.1" width="34" height="1"/><rect x="453" y="90.4" width="34" height="1.7"/><rect x="453" y="93.4" width="34" height="1.7"/><rect x="453" y="96.8" width="34" height="1.7"/><rect x="453" y="99.4" width="34" height="1"/><rect x="453" y="102.9" width="34" height="1"/><rect x="453" y="107.9" width="34" height="1.3"/><rect x="453" y="110.9" width="34" height="1.7"/><rect x="453" y="114.3" width="34" height="1"/><rect x="453" y="119.3" width="34" height="1"/><rect x="453" y="121.6" width="34" height="2.5"/><rect x="453" y="126.6" width="34" height="1.3"/><rect x="453" y="129.2" width="34" height="1"/><rect x="453" y="139.2" width="34" height="1.3"/><rect x="453" y="142.2" width="34" height="1"/><rect x="453" y="144.1" width="34" height="1.3"/><rect x="453" y="147.9" width="34" height="1"/><rect x="453" y="149.8" width="34" height="1.7"/><rect x="453" y="153.2" width="34" height="2.5"/><rect x="453" y="158.2" width="34" height="1"/></g></svg></div>
+    <h2 class="tx text-schedule-title schedule-title">РАСПИСАНИЕ</h2>
+    <p class="tx text-card-date card-bills-date">30 ОКТЯБРЯ · 18:00–21:00</p>
+    <h3 class="tx text-card-title card-bills-title">Мастер-класс по дизайну купюр</h3>
+    <p class="tx text-card-text card-bills-text">Разработаете дизайн-проект собственной банкноты: узнаете, как визуальные образы влияют на восприятие ценности, и создадите эскиз денежного знака.</p>
+    <p class="tx text-ticket-side ticket-bills-side">MONEYMAKER</p>
+    <p class="tx text-ticket-brand ticket-bills-brand">MONEYMAKER</p>
+    <p class="tx text-ticket-info ticket-bills-time">OCTOBER 30
+6 PM – 9 PM</p>
+    <p class="tx text-ticket-info ticket-bills-price"><span>ADULT: ONE
+PRICE: 5000 RUB</span></p>
+    <p class="tx text-ticket-desc ticket-bills-desc"> Hands-on masterclass in currency design: from visual concept to security principles.</p>
+    <p class="tx text-ticket-info ticket-bills-place"><span>DANILOVSKIY VAL, 1</span></p>
+    <p class="tx text-ticket-copy ticket-bills-copy">©2026 Kulik Mikhail</p>
+    <p class="tx text-ticket-label ticket-bills-label">BILLS</p>
+    <p class="tx text-card-date card-coins-date">31 ОКТЯБРЯ · 18:00–21:00</p>
+    <h3 class="tx text-card-title card-coins-title">Мастер-класс по дизайну монет</h3>
+    <p class="tx text-card-text card-coins-text">Придумаете тему и символы монеты, выстроите её содержание и освоите построение композиции в круге.</p>
+    <p class="tx text-ticket-copy-light ticket-coins-copy">©2026 Kulik Mikhail</p>
+    <p class="tx text-ticket-side-light ticket-coins-side">MONEYMAKER</p>
+    <p class="tx text-ticket-brand-light ticket-coins-brand">MONEYMAKER</p>
+    <p class="tx text-ticket-info-light ticket-coins-time">OCTOBER 31
+6 PM – 9 PM</p>
+    <p class="tx text-ticket-info-light ticket-coins-price"><span>ADULT: ONE
+PRICE: 5000 RUB</span></p>
+    <p class="tx text-ticket-desc-light ticket-coins-desc"> Hands-on masterclass in currency design: from visual concept to security principles.</p>
+    <p class="tx text-ticket-info-light ticket-coins-place"><span>DANILOVSKIY VAL, 1</span></p>
+    <p class="tx text-ticket-label-light ticket-coins-label">COINS</p>
+  </section>
+  <footer class="sec footer" id="contacts">
+    <img class="box footer-logo" src="assets/logo-red.svg" alt="Логотип Moneymaker">
+    <div class="box footer-band"></div>
+    <img class="box footer-hand" src="assets/hand.svg" alt="">
+    <div class="box footer-line"></div>
+    <p class="tx text-footer footer-author">Работа студента ВШЭ Кулика Михаила</p>
+    <p class="tx text-footer footer-term">1 модуль 2026 год</p>
+    <p class="tx text-footer footer-mail">Почта@Moneymaker.com</p>
+    <p class="tx text-footer-copy footer-copy">©2026 Kulik Mikhail</p>
+    <p class="tx text-band-large band-1">MONEYMAKER</p>
+    <p class="tx text-band band-2">ДИЗАЙН МОНЕТ И КУПЮР</p>
+    <p class="tx text-band band-3">MONEYMAKER</p>
+    <p class="tx text-band band-4">ДИЗАЙН МОНЕТ И КУПЮР</p>
+    <p class="tx text-band-large band-5">MONEYMAKER</p>
+    <p class="tx text-band-large band-6">ДИЗАЙН МОНЕТ И КУПЮР</p>
+    <p class="tx text-contacts footer-contacts"><span>контакты:
+
+тел: +7 495 1122666
+e-mail: moneymaker@kulik.studio
+
+адрес: ул. Даниловский Вал, 1
+</span></p>
+  </footer>
+</div>
+<script>
+  (function () {
+    var page = document.getElementById('page');
+    var supportsZoom = 'zoom' in document.documentElement.style;
+    function fit() {
+      var s = document.documentElement.clientWidth / 1440;
+      if (supportsZoom) { page.style.zoom = s; }
+      else { page.style.transform = 'scale(' + s + ')'; document.body.style.height = (page.offsetHeight * s) + 'px'; }
+    }
+    fit();
+    window.addEventListener('resize', fit);
+  })();
+</script>
 </body>
 </html>
